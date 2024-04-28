@@ -17,7 +17,7 @@
     "bootstrap": "^4.6.2",
     "bootstrap-vue": "^2.22.0",
     "core-js": "^3.25.3",
-    "json-server": "^1.0.0-alpha.23",
+    "json-server": "0.17.4",
     "nuxt": "^2.15.8",
     "nuxt-property-decorator": "^2.9.1",
     "vue": "^2.7.10",
@@ -25,15 +25,8 @@
     "vue-template-compiler": "^2.7.10"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.19.1",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
-    "@nuxtjs/eslint-config-typescript": "^11.0.0",
-    "@nuxtjs/eslint-module": "^3.1.0",
-    "eslint": "^8.24.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-vue": "^9.5.1",
     "prettier": "^2.7.1"
   }
 }

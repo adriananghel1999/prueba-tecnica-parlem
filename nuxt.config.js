@@ -21,7 +21,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: "@/plugins/axios-accessor.ts" }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -45,6 +45,10 @@ export default {
     mode: "history"
   },
 
+  serverMiddleware: [
+    { path: '/api', handler: '~/server/server.js' }
+  ],
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
@@ -53,4 +57,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  bootstrapVue: {
+    icons: false,
+    bootstrapCSS: true, // Disable bootstrapCSS
+    bootstrapVueCSS: true, // Disable bootstrapVueCSS
+  },
 }

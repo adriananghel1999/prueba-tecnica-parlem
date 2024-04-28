@@ -17,7 +17,7 @@ $ yarn start
 $ yarn generate
 
 # Launch json-server
-$ npx json-server --watch -p 8080 api/db.json
+$ npx json-server --watch -p 10000 server/db.json
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
@@ -69,8 +69,3 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
-
-### `json-server`
-
-Launch json-server
-npx json-server --watch -p 8080 api/db.json
