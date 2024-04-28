@@ -2,9 +2,6 @@ export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
-  // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'prueba-tecnica-parlem',
@@ -43,10 +40,15 @@ export default {
     '@nuxtjs/axios',
   ],
 
+  router: {
+    base: "/",
+    mode: "history"
+  },
+
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseUrl: process.env.API_URL,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
